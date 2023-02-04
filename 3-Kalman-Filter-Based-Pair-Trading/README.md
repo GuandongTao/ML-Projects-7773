@@ -5,3 +5,9 @@ Systems: Kalman Filtering". See the attached pdf for detail.
 document for reference). The hand-written derivation is attached.
 
 (b). Code up the pair trading strategy and compare rolling regression vs Kalman filtering.
+
+Critical issue: The construction of the model is highly likely to be flawed. There's no way the model achieves 100-fold return. 
+Action items: 
+(1). Check-up model. Some first-line items are based on random generation from uniform distribution. This might be a flawed plausible approach, as each randseed returns very different results
+(2). Vectorization of trading strategies and backtesting functions
+(3). Pair quality validation - correlation/cointegration check (e.g. ARCH, GARCH, etc.)
