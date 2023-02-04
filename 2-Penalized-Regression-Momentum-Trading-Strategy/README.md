@@ -1,5 +1,5 @@
 Implemented a momentum-based trading strategy for SPY, following the J.P.Morgan research document "Example of Penalized Regression Approach in a Multi Asset Trend 
-Following Strategy".
+Following Strategy". See the pdf document for reference.
 
 For predictor variables, choose lagged 1W, 2W, 1M and 2M returns of S&P and 3 other Indices (Any ticker in the directory beginning with the letter "X" is an index; 
 so XLK is the technology sector index), yielding a total of 16 variables. To calibrate the model, we used a rolling window of 100 trading days (~); re-calibration 
